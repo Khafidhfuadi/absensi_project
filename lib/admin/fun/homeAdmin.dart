@@ -1,4 +1,8 @@
-part of 'uis.dart';
+import 'package:flutter/material.dart';
+import 'package:geolocator/geolocator.dart';
+import 'package:project_coba/admin/ui/uis.dart';
+// import 'package:flutter/services.dart';
+import '../../size_helper.dart';
 
 class HomeAdmin extends StatefulWidget {
   @override
@@ -13,7 +17,7 @@ class _HomeAdminState extends State<HomeAdmin> {
     // TODO: implement build
     return Scaffold(
       body: Container(
-        // width: double.infinity,
+        width: double.infinity,
         decoration: BoxDecoration(
             gradient: LinearGradient(begin: Alignment.topCenter, colors: [
           Colors.teal[200],
@@ -45,12 +49,11 @@ class _HomeAdminState extends State<HomeAdmin> {
           SizedBox(
             height: displayHeight(context) * 0.054,
           ),
-          Stack(
-            children: <Widget>[
-              Align(
-                alignment: Alignment.bottomCenter,
-                child: Container(
-                  height: displayHeight(context) * 0.5396,
+          Expanded(
+            child: ListView(
+              children: <Widget>[
+                Container(
+                  height: displayHeight(context) * 0.503,
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.only(
@@ -303,8 +306,8 @@ class _HomeAdminState extends State<HomeAdmin> {
                     ],
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ]),
       ),

@@ -6,6 +6,6 @@ import 'package:flutter/material.dart';
 part 'absenHarian.dart';
 part 'admin.dart';
 part 'homeAdmin.dart';
-part 'dataSingleAbsen.dart';
+part 'dataSingle.dart';
 part 'tambahKaryawan.dart';
 // part 'ubahLokasi.dart';

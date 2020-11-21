@@ -49,6 +49,7 @@ Future getSingleDataKaryawan(String id) async {
     if (hasil.statusCode == 200) {
       print("Sukses menampilkan Single data");
       final data = json.decode(hasil.body);
+      print(data);
       return data;
     } else {
       print("Gagal menampikan Single data");
