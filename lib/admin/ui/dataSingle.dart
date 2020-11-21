@@ -77,7 +77,7 @@ class _DataSingleAbsenState extends State<DataSingleAbsen> {
                               ),
                               Expanded(
                                   child: Text("Absen Hadir : " +
-                                      singleKaryawan['absen_masuk'][0]
+                                      singleKaryawan['absen_masuk'][1]
                                               ['jam_masuk']
                                           .toString())),
                             ],
