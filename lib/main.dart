@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:project_coba/auth/login.dart';
 import 'package:project_coba/splashscreen.dart';
-import 'home.dart';
+import 'user/ui/home.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() => runApp(MyApp());

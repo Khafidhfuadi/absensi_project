@@ -3,9 +3,9 @@ import '../../size_helper.dart';
 import 'package:project_coba/splashscreen.dart';
 import 'package:flutter/material.dart';
 
-part 'absenHarian.dart';
+part 'dataKaryawan.dart';
 part 'admin.dart';
 part 'homeAdmin.dart';
 part 'dataSingle.dart';
-part 'tambahKaryawan.dart';
+part 'action/tambahKaryawan.dart';
 // part 'ubahLokasi.dart';

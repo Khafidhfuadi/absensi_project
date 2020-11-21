@@ -2,7 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:project_coba/admin/ui/uis.dart';
 import 'package:project_coba/main.dart';
-import 'home.dart';
+import 'user/ui/home.dart';
 import 'package:project_coba/main.dart';
 
 class SplashScreen extends StatefulWidget {

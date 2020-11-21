@@ -1,10 +1,10 @@
-import 'dart:convert';
+// import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:project_coba/auth/login.dart';
-import 'package:project_coba/network_utils/api.dart';
-import 'package:shared_preferences/shared_preferences.dart';
-import 'splashscreen.dart';
-import 'ui/uis.dart';
+// import 'package:project_coba/user/auth/login.dart';
+// import 'package:project_coba/network_utils/api.dart';
+// import 'package:shared_preferences/shared_preferences.dart';
+// import 'splashscreen.dart';
+import 'package:project_coba/user/ui/uis.dart';
 
 void main() {
   runApp(new MaterialApp(
@@ -97,14 +97,14 @@ class _HomeState extends State<Home> {
     );
   }
 
-  void logout() async {
-    var res = await Network().getData('/logout');
-    var body = json.decode(res.body);
-    if (body['success']) {
-      SharedPreferences localStorage = await SharedPreferences.getInstance();
-      localStorage.remove('user');
-      localStorage.remove('token');
-      Navigator.push(context, MaterialPageRoute(builder: (context) => Login()));
-    }
-  }
+  // void logout() async {
+  //   var res = await Network().getData('/logout');
+  //   var body = json.decode(res.body);
+  //   if (body['success']) {
+  //     SharedPreferences localStorage = await SharedPreferences.getInstance();
+  //     localStorage.remove('user');
+  //     localStorage.remove('token');
+  //     Navigator.push(context, MaterialPageRoute(builder: (context) => Login()));
+  //   }
+  // }
 }
